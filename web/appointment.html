@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="vali.js"></script>
+</head>
+<style>
+    .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+    border-radius: 50%;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 20%;
+}
+.topnav.inactive a{
+  background-color:black;
+  color: black;
+}
+.text-block {
+    position:absolute;
+    left:10px;
+    right: 40px;
+    width:800px;
+    height:500px;
+    background-color: graytext;
+    color: white;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+.center {
+     position: absolute;
+    top: 30%;
+    left: 20%;
+    right:70%;
+    bottom:50%;
+    transform: translate(-50%, -50%);
+}
+input[type=text],input[type=option] ,input[type=date],input[type=number] {
+    width: 20%;
+    height:15%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    /*display: inline-block;*/
+    border: none;
+    background:pink;
+}
+body{
+ background-image:url("ww.jpeg");
+ }
+    </style>
+<body>
+    <div class="topnav">
+         <a href="home.html">Home</a>
+      <a href="appointment.html">Appointment</a>
+      <a href="pharm.html">Pharmacy</a>
+      <a href="staff.html">Staff</a>
+   
+      <a href=lab.html>Laboratory</a>
+      <a href="docsearch.html">Search Doctor</a>
+      <a href="preg.html">Register Patient</a>
+      <a href="details.html">Patient Details</a>
+      <a href="bd.html">Donate Blood</a>
+       <a href="feedback.html">FeedBack</a>
+      <a href="about.html">About</a>
+      <a href="index.html">signout</a>
+       </div>
+    <h1 align="center" style="color:red;">APPOINTMENT FORM</h1>
+     <div class="center">
+  <div class="text-block">
+<form   method="post" action="aptsucces.html" >
+<ul>
+      <li> <label for="tno">Patient Name:</label>
+      <input type="text" name="pname"></li>&nbsp &nbsp &nbsp &nbsp
+
+      
+     <li><label for="src">Phone Number:</label>
+      <input type="text" name="mob"></li><br>&nbsp &nbsp &nbsp &nbsp
+      <li> <label for="dst">Department:</label>
+       <select>
+    <option></option>
+    <option>Cardiology</option>
+    <option>Ophthalmology</option>
+    <option>Neurology</option>
+    <option>Psychology</option>
+    <option>Dermatology</option>
+    </select></li>
+      <li><label for="tno">Date:</label>
+      <input type="date" name="date"><br></li>
+     <li><label for="src">Email:</label>
+      <input type="text" name="mob"></li>&nbsp &nbsp &nbsp &nbsp
+      <li> <label for="dst">Gender:</label>
+       <select>
+    <option></option>
+    <option>Male</option>
+    <option>Feamle</option>
+    <option>Other</option>
+    </select></li>
+    
+     <li><label for="src">Symptoms:</label>
+      <input type="text" name="mob">&nbsp &nbsp &nbsp &nbsp
+       </li>
+      
+       <input type="submit" value ="MAKE APPOINTMENT" >
+      </div>
+         </div>
+    </form>
+      

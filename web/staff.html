@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body{
+ background-image:url("blurr.jpg");
+ background-repeat: no-repeat;
+ background-size: 1500px 800px;
+ }
+ .userlogo {
+    float:right;
+    width: 70px;
+    height: 70px;
+    border-radius: 60%;
+}
+html {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 20.3%;
+  margin-bottom: 10px;
+  padding: 0 4px;
+}
+
+.card {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 6px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+    font-weight: bold;
+  color: darkred;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: red;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+    border-radius: 50%;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 20%;
+}
+.topnav.inactive a{
+  background-color:black;
+  color: black;
+}
+
+</style>
+</head>
+<body>
+<div class="topnav">
+      <a href="home.html">Home</a>
+      <a href="appointment.html">Appointment</a>
+      <a href="pharm.html">Pharmacy</a>
+      <a href="staff.html">Staff</a>
+     
+      <a href=lab.html>Laboratory</a>
+      <a href="docsearch.html">Search Doctor</a>
+      <a href="preg.html">Register Patient</a>
+      <a href="details.html">Patient Details</a>
+      <a href="bd.html">Donate Blood</a>
+       <a href="feedback.html">FeedBack</a>
+      <a href="about.html">About</a>
+      
+      
+    </div>
+
+
+<h2>Our Hospital Staff</h2>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img class="userlogo" src="user.png" alt="doc1" >
+      <div class="container">
+        <h2>Dr.Jashiya Anjum</h2>
+        <p class="title">Doctor</p>
+        <p>MBBS,MA.10 YERAS of experience</p>
+        <p>jashiyaanjum@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <img class="userlogo" src="user.png" alt="Jane" >
+      <div class="container">
+        <h2>Dr.Jyothi Bandu</h2>
+        <p class="title">Doctor</p>
+        <p>MBBS MA .</p>
+        <p>bandujyothi@yahoo.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <img class="userlogo" src="user.png" >
+      <div class="container">
+        <h2>Dr.Ramya G</h2>
+        <p class="title">Doctor</p>
+        <p>MBBS MA.</p>
+        <p>ramya@yahoo.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <img class="userlogo" src="user.png" >
+      <div class="container">
+        <h2>Samuel</h2>
+        <p class="title">Nurse</p>
+        <p>MBBS MA.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="user.png"  class="userlogo">
+      <div class="container">
+        <h2>Jessica rose</h2>
+        <p class="title">Assistant.surgeon</p>
+        <p>MBBS MA.</p>
+        <p>jes_124@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="user.png" class="userlogo" >
+      <div class="container">
+        <h2>Manasa </h2>
+        <p class="title">LAB TECHNICIAN</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>manasa_12@yahoo.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+ 
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img class="userlogo"  src="user.png">
+      <div class="container">
+        <h2>Dr.Sanjay</h2>
+        <p class="title">Sr.surgeon</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>rk_1188@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div><div class="row">
+  <div class="column">
+    <div class="card">
+      <img class="userlogo" src="user.png">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">Pharmacist</p>
+        <p>asmssdsdcdddddddcd.</p>
+        <p>jane_09@rediff.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

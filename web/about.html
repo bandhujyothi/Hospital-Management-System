@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body{
+ background-image:url("docsearch.png");
+ background-repeat: no-repeat;
+ background-size: 500px 700px;
+ }
+html {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 20.3%;
+  margin-bottom: 10px;
+  padding: 0 4px;
+}
+
+.card {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 6px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: red;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+    border-radius: 50%;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 20%;
+}
+.topnav.inactive a{
+  background-color:black;
+  color: black;
+}
+.text-block {
+    position:absolute;
+    left:10px;
+    right: 40px;
+    width:800px;
+    height:500px;
+    background-color:darkslateblue;
+    color: white;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+.center {
+     position: absolute;
+    top: 30%;
+    left:30%;
+    right:60%;
+    bottom:50%;
+    transform: translate(-50%, -50%);
+}
+input[type=text],input[type=option] ,input[type=date],input[type=number] {
+    width: 20%;
+    height:15%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    /*display: inline-block;*/
+    border: none;
+    background:lightpink;
+}
+
+
+</style>
+</head>
+<body>
+<div class="topnav">
+           <a href="home.html">Home</a>
+      <a href="appointment.html">Appointment</a>
+      <a href="pharm.html">Pharmacy</a>
+      <a href="staff.html">Staff</a>
+     
+      <a href=lab.html>Laboratory</a>
+      <a href="docsearch.html">Search Doctor</a>
+      <a href="preg.html">Register Patient</a>
+       <a href="details.html">Patient Details</a>
+      <a href="bd.html">Donate Blood</a>
+       <a href="feedback.html">FeedBack</a>
+      <a href="about.html">About</a>
+     
+    </div>
+    
+        
+
+</body>
+</html>

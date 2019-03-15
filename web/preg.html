@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body{
+ background-image:url("tx1.jpg");
+  background-repeat: no-repeat;
+ background-size: 1500px 800px;
+ }
+html {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 20.3%;
+  margin-bottom: 10px;
+  padding: 0 4px;
+}
+
+.card {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 6px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: red;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+    border-radius: 50%;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 20%;
+}
+.topnav.inactive a{
+  background-color:black;
+  color: black;
+}
+.text-block {
+    position:absolute;
+    left:10px;
+    right: 40px;
+    width:800px;
+    height:620px;
+    background-color:lightgoldenrodyellow;
+    color: black;
+    padding-left: 50px;
+    padding-right: 20px;
+}
+.center {
+     position: absolute;
+    top: 30%;
+    left: 20%;
+    right:70%;
+    bottom:50%;
+    transform: translate(-50%, -50%);
+}
+input[type=text],input[type=option] ,input[type=date],input[type=number] {
+    width: 20%;
+    height:15%;
+    padding: 10px;
+    margin: 5px 0 15px 0;
+    /*display: inline-block;*/
+    border: none;
+    background:lightblue;
+}
+
+</style>
+</head>
+<body>
+<div class="topnav">
+         <a href="home.html">Home</a>
+      <a href="appointment.html">Appointment</a>
+      <a href="pharm.html">Pharmacy</a>
+      <a href="staff.html">Staff</a>
+   
+      <a href=lab.html>Laboratory</a>
+      <a href="docsearch.html">Search Doctor</a>
+      <a href="preg.html">Register Patient</a>
+      <a href="details.html">Patient Details</a>
+      <a href="bd.html">Donate Blood</a>
+       <a href="feedback.html">FeedBack</a>
+      <a href="about.html">About</a>
+      <a href="index.html">signout</a>
+      
+    </div>
+
+<h1 align="center" style="color:black;">PATIENT REGISTARTION  FORM</h1>
+     <div class="center">
+  <div class="text-block">
+<form   method="post" action="preg.jsp">
+    <h3>
+<ul>
+      <li> <label for="tno">Patient Name:</label>
+      <input type="text" name="pname"></li>&nbsp &nbsp &nbsp &nbsp
+      <li> <label for="tno">Father's Name:</label>
+      <input type="text" name="fname"></li>&nbsp &nbsp &nbsp &nbsp
+      <li> <label for="tno">Mother's Name:</label>
+      <input type="text" name="mname"></li>&nbsp &nbsp &nbsp &nbsp
+      <li><label for="gen"><b>Gender:</b></label>
+    <input type="radio" name="gn" value="male">Male
+	<input type="radio" name="gn" value="female">Female
+	<input type="radio" name="gn" value="other">Other</li>
+     <li> <label for="tno">Age:</label>
+         <input type="number" name="age"></li>
+     <li><label for="src">Problem:</label>
+      <textarea rows='1' cols=' 30'  name="prob"></textarea>&nbsp &nbsp &nbsp &nbsp
+       </li>
+     <li><label for="src">Phone Number:</label>
+      <input type="text" name="mob"></li><br>&nbsp &nbsp &nbsp &nbsp
+     <li><label for="src">Email:</label>
+      <input type="text" name="mail"></li>&nbsp &nbsp &nbsp &nbsp
+      
+    
+     <li><label for="src">Symptoms:</label><br>
+      <textarea rows='5' cols=' 30'  name="sym"></textarea>&nbsp &nbsp &nbsp &nbsp
+       </li>
+      
+       <input type="submit" value ="Register">
+      </div>
+         </div></h3>
+    </form>
+
+<br>
+        
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome</title>
+<style>
+body
+{
+  background-image:url("new.jpg");
+  background-size: 1500px 800px;
+}
+p
+{
+	color:red;
+	font-size:40px;
+	font-family:Sanserif;
+}
+h1
+{
+	font-family:forte;
+	font-size:50px;
+	color:blue;
+}
+
+.btn {
+    background-color: pink; 
+    border: none;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    margin: 4px 2px;
+    cursor: pointer;
+	border-radius: 50px;
+	font-family:forte;
+}
+.sp  p
+{
+font-size:20 px;
+}
+
+
+</style>
+
+<h1 align="center"><i>Hospital Management System!</i></h1>
+<p align="center"><i>Please Login to avail our Hospital Services!</i></p>
+<h2 align="center" >
+ <form name="f1" action="submit.jsp" ><i>
+  Username:
+  <input type="text" name="uname"><br><br>&nbsp &nbsp &nbsp &nbsp
+  Password:
+  <input type="password" name="pwd" id="myInput" ></i>
+   &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp
+  <h6><input type="checkbox" onclick="myFunction()">Show Password<br></h6>
+
+<button class="btn"><i>Submit</i></button></a>
+</form>
+    <form name="f2" action="newuser.html">
+<button class="btn"><i>New User?</i></button>
+</form>
+<a href="forgotpass.html"><font color="blue">Forgot password?</a>
+
+</h2>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+        x.type = "text";
+    } else {
+        x.type = "password";
+    }
+}
+</script>
+</body>
+</html>
+

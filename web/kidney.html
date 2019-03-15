@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body{
+ background-image:url("labbg.jpg");
+ background-repeat: no-repeat;
+ background-size: 1500px 800px;
+ }
+html {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 20.3%;
+  margin-bottom: 10px;
+  padding: 0 4px;
+}
+
+.card {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 6px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: red;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+    border-radius: 50%;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 20%;
+}
+.topnav.inactive a{
+  background-color:black;
+  color: black;
+}
+
+</style>
+</head>
+<body>
+<div class="topnav">
+      <a href="home.html">Home</a>
+      <a href="appointment.html">Appointment</a>
+      <a href="pharm.html">Pharmacy</a>
+      <a href="staff.html">Staff</a>
+    
+      <a href=lab.html>Laboratory</a>
+      <a href="docsearch.html">Search Doctor</a>
+      <a href="preg.html">Register Patient</a>
+      <a href="details.html">Patient Details</a>
+      <a href="bd.html">Donate Blood</a>
+       <a href="feedback.html">FeedBack</a>
+      <a href="about.html">About</a>
+      <a href="index.html">signout</a>
+      
+    </div>
+      <form action="lab.html">
+    <input type="submit" value="Back"></form>
+  <dl><h1>kidney Function Tests</h1>
+      <dt>Overview:</dt>
+	  <dd>Kidney function tests are a group of tests used to evaluate how efficiently your kidneys are working. Kidneys play a major role in maintaining the health of an individual. The most important function of your kidneys is to filter waste materials from the body and excrete them in the form of urine. Various types of kidney function tests are:</dd>
+	  <dd>Blood Urea Nitrogen (BUN)</dd>
+	  <dd>Creatinine-blood<dd/>
+	  <dd>Creatinine-urinedd/>
+	  <dd>Creatinine clearance<dd/>
+	 </dl>
